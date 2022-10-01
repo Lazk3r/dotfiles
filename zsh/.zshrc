@@ -77,6 +77,7 @@ alias gcm='git commit -m'
 alias gps='git push'
 alias gpl='git pull'
 alias gr='git restore'
+alias lg='lazygit' # Lazygit
 
 alias ssh='kitty +kitten ssh'
 alias server='ssh myserveruser@192.168.1.100'
