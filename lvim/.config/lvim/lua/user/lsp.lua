@@ -22,7 +22,7 @@ if not status_ok then
 end
 
 lsp_lines.setup()
-vim.diagnostic.config({virtual_lines=false})
+vim.diagnostic.config({ virtual_lines = false })
 
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
