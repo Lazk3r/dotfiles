@@ -1,4 +1,5 @@
 
 lvim/.config/lvim/plugin
-qtile/.config/qtile/settings/__pycache__
+
 qtile/.config/qtile/__pycache__
+qtile/.config/qtile/settings/__pycache__
