@@ -8,4 +8,8 @@ lvim.plugins = {
     "0x100101/lab.nvim",
     run = "cd js && npm ci",
   },
+  {
+    'dccsillag/magma-nvim',
+    run = ':UpdateRemotePlugins'
+  },
 }
