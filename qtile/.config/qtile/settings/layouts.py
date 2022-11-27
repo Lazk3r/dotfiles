@@ -3,6 +3,7 @@
 
 from libqtile import layout
 from settings.theme import colors
+from libqtile.config import Match
 
 # Layouts and layout rules
 
@@ -31,6 +32,7 @@ layouts = [
 floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
+        Match(wm_class="Steam"),
     ],
     border_focus=colors["color4"][0],
     border_width=0
