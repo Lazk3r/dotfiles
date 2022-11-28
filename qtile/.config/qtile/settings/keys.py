@@ -49,8 +49,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "control"], "q", lazy.shutdown()),
     ([mod], "r", lazy.spawncmd()),
 
-    ([mod, "shift"], "x", lazy.hide_show_bar("top")),
-    ([mod, "control"], "x", lazy.hide_show_bar("bottom")),
+    ([mod, "shift"], "x", lazy.hide_show_bar("all")),
 
     # ------------ App Configs ------------
 
