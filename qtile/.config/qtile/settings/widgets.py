@@ -131,7 +131,7 @@ bottom_widgets = [
 
     widget.Spacer(**base(bg='dark')),
 
-    widget.GenPollText(**base(bg='dark', fg='focus'), update_interval=1, fmt='{}', func=lambda: subprocess.check_output(
+    widget.GenPollText(**base(bg='dark', fg='focus'), update_interval=2, fmt='{}', func=lambda: subprocess.check_output(
         "/home/lazk3r/.config/qtile/playing.sh").decode("utf-8").replace('\n', '')),
 
     widget.Spacer(**base(bg='dark')),

@@ -33,6 +33,7 @@ floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
         Match(wm_class="Steam"),
+        Match(wm_class="epicgameslauncher.exe"),
     ],
     border_focus=colors["color4"][0],
     border_width=0
