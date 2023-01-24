@@ -24,6 +24,62 @@ def autostart():
     subprocess.call([path.join(qtile_path, 'autostart.sh')])
 
 
+@hook.subscribe.layout_change
+def _(layout, group):
+    if layout.name == "max":
+        for i in group.windows:
+            i.window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+        @hook.subscribe.client_new
+        def _(win):
+            win.window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+    elif layout.name == "monadtall":
+        if len(group.windows) <= 1:
+            group.windows[0].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+            group.windows[1].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+            @hook.subscribe.client_new
+            def _(win):
+                win.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+                for i in group.windows:
+                    i.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+            @hook.subscribe.client_killed
+            def _(win):
+                if len(group.windows) <= 2:
+                    group.windows[0].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+                    group.windows[1].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+        else:
+            for i in group.windows:
+                i.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+            @hook.subscribe.client_new
+            def _(win):
+                win.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+                for i in group.windows:
+                    i.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+            @hook.subscribe.client_killed
+            def _(win):
+                if len(group.windows) <= 2:
+                    group.windows[0].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+                    group.windows[1].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+    else:
+        for i in group.windows:
+            i.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+
+
+@hook.subscribe.startup_once
+def _():
+    @hook.subscribe.group_window_add
+    def _(group, win):
+        if len(group.windows) == 0:
+            win.window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+        else:
+            for i in group.windows:
+                i.window.set_property("ROUND_CORNERS", 0, "CARDINAL", 32)
+            @hook.subscribe.client_killed
+            def _(win):
+                if len(group.windows) <= 2:
+                    group.windows[0].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+                    group.windows[1].window.set_property("ROUND_CORNERS", 1, "CARDINAL", 32)
+
+
 main = None
 dgroups_key_binder = None
 dgroups_app_rules = []
