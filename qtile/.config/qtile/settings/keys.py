@@ -12,25 +12,26 @@ mod = "mod4"
 keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ Window Configs ------------
 
-    # Switch between windows in current stack pane
+    # Controling windows
     ([mod], "j", lazy.layout.down()),
     ([mod], "k", lazy.layout.up()),
     ([mod], "h", lazy.layout.left()),
     ([mod], "l", lazy.layout.right()),
-
-    # Change window sizes (MonadTall)
-    ([mod, "shift"], "l", lazy.layout.grow()),
-    ([mod, "shift"], "h", lazy.layout.shrink()),
+    ([mod, "shift"], "h", lazy.layout.swap_left()),
+    ([mod, "shift"], "l", lazy.layout.swap_right()),
+    ([mod, "shift"], "j", lazy.layout.shuffle_down()),
+    ([mod, "shift"], "k", lazy.layout.shuffle_up()),
+    ([mod], "i", lazy.layout.grow()),
+    ([mod], "u", lazy.layout.shrink()),
+    ([mod], "n", lazy.layout.normalize()),
+    ([mod], "o", lazy.layout.maximize()),
+    ([mod, "shift"], "space", lazy.layout.flip()),
 
     # Toggle fullscreen
     ([mod], "f", lazy.window.toggle_fullscreen()),
 
     # Toggle floating
     ([mod, "shift"], "f", lazy.window.toggle_floating()),
-
-    # Move windows up or down in current stack
-    ([mod, "shift"], "j", lazy.layout.shuffle_down()),
-    ([mod, "shift"], "k", lazy.layout.shuffle_up()),
 
     # Toggle between different layouts as defined below
     ([mod], "Tab", lazy.next_layout()),
