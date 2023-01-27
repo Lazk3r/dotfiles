@@ -822,10 +822,6 @@ class MonadWide(MonadTall):
 # A modifide version of Floating layout from the source code of qtile
 
 class Floating(Layout):
-    """
-    Floating layout, which does nothing with windows but handles focus order
-    """
-
     default_float_rules = [
         Match(wm_type="utility"),
         Match(wm_type="notification"),
