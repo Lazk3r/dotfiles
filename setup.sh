@@ -25,7 +25,7 @@ do
         clear
         break;;
       "Install programs")
-        sudo pacman -S breeze gsfonts ttf-ubuntumono-nerd pacman-contrib picom numlockx pcmanfm vifm ranger firefox tumbler ffmpegthumbnailer xarchiver nitrogen lxappearance-gtk3 rofi zathura zathura-pdf-poppler sxiv xfce4-screenshooter xsel nodejs npm exa neovim jdk8-openjdk alacritty geany python-pip neofetch htop gtop arc-gtk-theme papirus-icon-theme autopep8 mpv figlet bat fd gparted xfce4-power-manager light-locker lxsession ripgrep ttf-joypixels lm_sensors lib32-lm_sensors fzf kitty zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting fish pavucontrol pulseaudio stow
+        sudo pacman -S breeze gsfonts ttf-ubuntu-mono-nerd pacman-contrib picom numlockx pcmanfm vifm ranger firefox tumbler ffmpegthumbnailer xarchiver nitrogen lxappearance-gtk3 rofi zathura zathura-pdf-poppler sxiv xfce4-screenshooter xsel nodejs npm exa neovim jdk8-openjdk alacritty geany python-pip neofetch htop gtop arc-gtk-theme papirus-icon-theme autopep8 mpv figlet bat fd gparted xfce4-power-manager light-locker lxsession ripgrep ttf-joypixels lm_sensors lib32-lm_sensors fzf kitty zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting fish pavucontrol pulseaudio stow
         paru -S ttf-ms-fonts etcher-bin ventoy-bin timeshift-bin rar brave-bin dtrx librewolf-bin shell-color-scripts tela-circle-icon-theme-git simple-mtpfs nvim-packer-git advcpmv
         clear
         break;;
