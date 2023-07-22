@@ -69,6 +69,7 @@ alias ys='paru -S'
 alias yss='paru -Ss'
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 #   GIT
+alias gi='git init'
 alias gs='git status'
 alias gck='git checkout'
 alias gbr='git branch'
@@ -86,3 +87,22 @@ alias cp='cpg -g'
 alias mv='mvg -g'
 
 . ~/z/z.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/lazk3r/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/lazk3r/.miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/lazk3r/.miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/lazk3r/.miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export QSYS_ROOTDIR="/home/lazk3r/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+export PATH="/home/lazk3r/.local/podman/bin:$PATH"

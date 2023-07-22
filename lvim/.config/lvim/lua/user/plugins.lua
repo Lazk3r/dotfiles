@@ -6,10 +6,10 @@ lvim.plugins = {
   "is0n/jaq-nvim",
   {
     "0x100101/lab.nvim",
-    run = "cd js && npm ci",
+    build = "cd js && npm ci",
   },
   {
     'dccsillag/magma-nvim',
-    run = ':UpdateRemotePlugins'
+    build = ':UpdateRemotePlugins'
   },
 }

@@ -42,7 +42,7 @@ def workspaces(): return [
     #separator(),
     widget.GroupBox(
         **base(fg='light', bg='focus'),
-        font='UbuntuMono Nerd Font',
+        font='FantasqueSansMono Nerd Font',
         fontsize=19,
         margin_y=3,
         margin_x=0,
@@ -162,7 +162,7 @@ secondary_widgets = [
 ]
 
 widget_defaults = {
-    'font': 'UbuntuMono Nerd Font Bold',
+    'font': 'FantasqueSansMono Nerd Font Bold',
     'fontsize': 14,
     'padding': 1,
 }
