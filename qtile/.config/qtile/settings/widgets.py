@@ -25,16 +25,16 @@ icon = lambda fg='text', bg='dark', fontsize=16, text="?": widget.TextBox(
 
 powerlineLeft = lambda fg="light", bg="dark": widget.TextBox(
     **base(fg, bg),
-    text="",
-    fontsize=37,
-    padding=-3
+    text="",
+    fontsize=38,
+    padding=1
 )
 
 powerlineRight = lambda fg="light", bg="dark": widget.TextBox(
     **base(fg, bg),
-    text="",
+    text="",
     fontsize=37,
-    padding=-3
+    padding=0
 )
 
 
@@ -42,7 +42,7 @@ def workspaces(): return [
     #separator(),
     widget.GroupBox(
         **base(fg='light', bg='focus'),
-        font='FantasqueSansMono Nerd Font',
+        font='FantasqueSansM Nerd Font',
         fontsize=19,
         margin_y=3,
         margin_x=0,
@@ -162,7 +162,7 @@ secondary_widgets = [
 ]
 
 widget_defaults = {
-    'font': 'FantasqueSansMono Nerd Font Bold',
+    'font': 'FantasqueSansM Nerd Font Bold',
     'fontsize': 14,
     'padding': 1,
 }

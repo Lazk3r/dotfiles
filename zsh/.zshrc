@@ -106,3 +106,4 @@ unset __conda_setup
 
 export QSYS_ROOTDIR="/home/lazk3r/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
 export PATH="/home/lazk3r/.local/podman/bin:$PATH"
+export PATH="/home/lazk3r/.local/bin:$PATH"
