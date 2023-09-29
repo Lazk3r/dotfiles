@@ -1,6 +1,6 @@
 lvim.plugins = {
   "catppuccin/nvim",
-  "j-hui/fidget.nvim",
+  -- "j-hui/fidget.nvim",
   "karb94/neoscroll.nvim",
   "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
   "is0n/jaq-nvim",

@@ -40,14 +40,14 @@ linters.setup {
   -- { command = "eslint", filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" } },
 }
 
-vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "arduino_language_server" })
+-- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "arduino_language_server" })
 
-require("lvim.lsp.manager").setup("arduino_language_server", {
-  cmd = {
-    "arduino-language-server",
-    "-cli-config", "/path/to/arduino-cli.yaml",
-    "-fqbn", "arduino:avr:uno",
-    "-cli", "arduino-cli",
-    "-clangd", "clangd"
-  }
-})
+-- require("lvim.lsp.manager").setup("arduino_language_server", {
+--   cmd = {
+--     "arduino-language-server",
+--     "-cli-config", "/path/to/arduino-cli.yaml",
+--     "-fqbn", "arduino:avr:uno",
+--     "-cli", "arduino-cli",
+--     "-clangd", "clangd"
+--   }
+-- })
