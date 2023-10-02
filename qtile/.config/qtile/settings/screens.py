@@ -9,7 +9,7 @@ from settings.widgets import primary_widgets, secondary_widgets, bottom_widgets
 import subprocess
 
 
-def status_bar(widgets): return bar.Bar(widgets, 24, opacity=0.8)
+def status_bar(widgets): return bar.Bar(widgets, 24, opacity=0.9)
 
 
 screens = [Screen(top=status_bar(primary_widgets), bottom=status_bar(bottom_widgets))]

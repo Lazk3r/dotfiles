@@ -33,8 +33,8 @@ powerlineLeft = lambda fg="light", bg="dark": widget.TextBox(
 powerlineRight = lambda fg="light", bg="dark": widget.TextBox(
     **base(fg, bg),
     text="",
-    fontsize=37,
-    padding=0
+    fontsize=38,
+    padding=1
 )
 
 
@@ -138,7 +138,7 @@ bottom_widgets = [
 
     powerlineLeft('color4', 'dark'),
 
-    widget.DF(**base(bg='color4'), partition = '/home/lazk3r/Datos', visible_on_warn = False, format = '💾 {uf}{m}/{s}{m} ({r:.0f}%)', update_interval = 300),
+    widget.DF(**base(bg='color4'), partition = '/home/lazk3r/HDD', visible_on_warn = False, format = '💾 {uf}{m}/{s}{m} ({r:.0f}%)', update_interval = 300),
 
     powerlineLeft('color5', 'color4'),
 
