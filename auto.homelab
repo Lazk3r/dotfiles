@@ -1,0 +1,10 @@
+# Config for autofs
+# Credentials file: sudo vim /etc/samba/credentials
+# username=xxxxxx
+# password=xxxxxx
+# sudo chmod 600 /etc/samba/credentials
+# In auto.master:
+# mount/Point /etc/autofs/auto.homelab --timeout 60 --browse
+
+Media -fstype=cifs,uid=1000,gid=1000,credentials=/etc/samba/credentials ://server/Media
+Downloads -fstype=cifs,uid=1000,gid=1000,credentials=/etc/samba/credentials ://server/Downloads
