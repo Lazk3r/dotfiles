@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.profile
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -47,9 +48,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first'  # long format
@@ -83,8 +81,12 @@ alias lg='lazygit' # Lazygit
 alias ssh='kitty +kitten ssh'
 alias server='ssh myserveruser@192.168.1.100'
 
-alias cp='cpg -g'
-alias mv='mvg -g'
+alias matlab='~/.local/matlab/bin/matlab'
+alias quartus='env LM_LICENSE_FILE=/home/lazk3r/HDD/Universidad/anteproyecto/plataformas/licencias/Desktop/LR-192215_License.dat ~/.local/intelFPGA_lite/23.1std/quartus/bin/quartus'
+alias gowin='export LD_PRELOAD=/usr/lib64/libfreetype.so.6 && ~/.local/gowin/IDE/bin/gw_ide'
+
+#alias cp='cpg -g'
+#alias mv='mvg -g'
 
 . ~/z/z.sh
 
@@ -104,6 +106,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-export QSYS_ROOTDIR="/home/lazk3r/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+export QSYS_ROOTDIR="/home/lazk3r/.local/intelFPGA_lite/23.1std/quartus/sopc_builder/bin"
 export PATH="/home/lazk3r/.local/podman/bin:$PATH"
 export PATH="/home/lazk3r/.local/bin:$PATH"
