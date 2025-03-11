@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "editor.fontFamily": "'FantasqueSansM Nerd Font'",
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    }
+}
