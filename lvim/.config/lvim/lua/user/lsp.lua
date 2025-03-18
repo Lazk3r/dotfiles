@@ -24,21 +24,21 @@ end
 lsp_lines.setup()
 vim.diagnostic.config({ virtual_lines = false })
 
-local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup {
-  { command = "autopep8", filetypes = { "python" } },
-  {
-    command = "prettier",
-    extra_args = { "--single-quote", "--jsx-single-quote" },
-    filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
-  },
-}
+-- local formatters = require "lvim.lsp.null-ls.formatters"
+-- formatters.setup {
+--   { command = "autopep8", filetypes = { "python" } },
+--   {
+--     command = "prettier",
+--     extra_args = { "--single-quote", "--jsx-single-quote" },
+--     filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
+--   },
+-- }
 
-local linters = require "lvim.lsp.null-ls.linters"
-linters.setup {
-  { command = "flake8", filetypes = { "python" } },
-  -- { command = "eslint", filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" } },
-}
+-- local linters = require "lvim.lsp.null-ls.linters"
+-- linters.setup {
+--   { command = "flake8", filetypes = { "python" } },
+--   -- { command = "eslint", filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" } },
+-- }
 
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "arduino_language_server" })
 
