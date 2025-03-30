@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Quartus
+Comment=Abrir Quartus con licencia configurada
+Exec=env LM_LICENSE_FILE=/home/lazk3r/HDD/Universidad/anteproyecto/plataformas/licencias/Desktop/LR-192215_License.dat /home/lazk3r/.local/intelFPGA_lite/23.1std/quartus/bin/quartus
+Icon=/home/lazk3r/.local/intelFPGA_lite/23.1std/quartus/adm/quartusii.png
+Terminal=false
+Categories=Development;Electronics;IDE;
