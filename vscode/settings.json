@@ -57,6 +57,6 @@
     // Números relativos en el editor
     "editor.lineNumbers": "relative",
     // Formatear al guardar
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
     "editor.cursorBlinking": "solid"
 }
