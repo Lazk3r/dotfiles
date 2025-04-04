@@ -8,5 +8,54 @@
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
-    }
+    },
+    // Configuración Vim
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.relativeNumbers": true,
+    // Números relativos en el editor
+    "editor.lineNumbers": "relative",
+    // Formatear al guardar
+    "editor.formatOnSave": true
 }
