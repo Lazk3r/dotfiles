@@ -58,4 +58,5 @@
     "editor.lineNumbers": "relative",
     // Formatear al guardar
     "editor.formatOnSave": true
+    "editor.cursorBlinking": "solid"
 }
