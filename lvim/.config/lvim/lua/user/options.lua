@@ -11,3 +11,10 @@ vim.opt.relativenumber = true
 lvim.builtin.bufferline.active = false
 vim.opt.showtabline = 0
 lvim.builtin.breadcrumbs.active = true
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.launch",
+  callback = function()
+    vim.bo.filetype = "xml"
+  end,
+})
